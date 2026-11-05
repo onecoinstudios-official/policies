@@ -4,8 +4,8 @@ Public privacy policies served with GitHub Pages.
 
 | Page | URL |
 | --- | --- |
-| Index | `https://onecoinstudios.github.io/policies/` |
-| Bento Rush privacy policy | `https://onecoinstudios.github.io/policies/bento-rush.html` |
+| Index | `https://onecoinstudios-official.github.io/policies/` |
+| Bento Rush privacy policy | `https://onecoinstudios-official.github.io/policies/bento-rush.html` |
 
 ## Publishing
 
@@ -16,7 +16,7 @@ Public privacy policies served with GitHub Pages.
    - Source: **Deploy from a branch**
    - Branch: **main**, folder: **/ (root)**
 4. Wait for the Pages deployment to finish, then open
-   `https://onecoinstudios.github.io/policies/bento-rush.html`.
+   `https://onecoinstudios-official.github.io/policies/bento-rush.html`.
 5. Paste that URL into Play Console → **App content → Privacy policy**.
 
 If the repository lives under a different account or organisation, the URL
