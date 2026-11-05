@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Bento Rush</title>
-  <meta name="description" content="Privacy policy for Bento Rush, the 60-second bento-box match-3 game by One Coin Studios: local scores, contextual family-safe ads from Google AdMob, and anonymous usage counts.">
+  <meta name="description" content="Privacy policy for Bento Rush, the 60-second bento-box match-3 game by One Coin Studios: local scores, contextual family-safe ads, anonymous usage counts and crash diagnostics.">
   <link rel="canonical" href="https://onecoinstudios-official.github.io/policies/bento-rush.html">
 
   <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
@@ -418,12 +418,12 @@
       <p class="eyebrow">One Coin Studios</p>
       <h1>Privacy Policy</h1>
       <p class="updated">
-        Effective <time datetime="2026-11-05">5 November 2026</time> · Version 1.1
+        Effective <time datetime="2026-11-05">5 November 2026</time> · Version 1.2
       </p>
 
       <p class="lede">
         Bento Rush is a 60-second match-3 game. This policy explains what the
-        game, and the two Google services it uses, do with information — in
+        game, and the three Google services it uses, do with information — in
         plain terms and without small print.
       </p>
 
@@ -450,7 +450,7 @@
 
       <h2>What we collect</h2>
       <p>
-        Bento Rush itself keeps your scores locally. Two Google services
+        Bento Rush itself keeps your scores locally. Three Google services
         receive the following, and nothing else:
       </p>
 
@@ -487,6 +487,14 @@
                 version, language, coarse screen size
               </td>
               <td>Delivering an ad that fits and diagnosing problems</td>
+              <td>Google</td>
+            </tr>
+            <tr>
+              <td>
+                Crash logs — device and app state at the moment of failure,
+                plus the stack trace
+              </td>
+              <td>Finding and fixing crashes and performance problems</td>
               <td>Google</td>
             </tr>
             <tr>
@@ -548,6 +556,54 @@
         consent step below is resolved.
       </p>
 
+      <h2>Crash reports</h2>
+      <p>
+        If Bento Rush ever closes unexpectedly, we want to know why. The game
+        uses <strong>Firebase Crashlytics</strong>, Google&rsquo;s
+        crash-reporting service — the only stability and crash-monitoring tool
+        in the game.
+      </p>
+      <p>
+        When something goes wrong, Crashlytics automatically sends a technical
+        report the next time the game starts. That report contains:
+      </p>
+      <ul>
+        <li>device hardware details, model and operating-system version;</li>
+        <li>
+          the app version, the screen that was open, and how far into a round
+          the game was;
+        </li>
+        <li>
+          app state at the moment of failure, such as memory pressure and
+          available storage;
+        </li>
+        <li>the stack trace showing where the code failed.</li>
+      </ul>
+      <p>
+        <strong>It does not contain</strong> your name, email address,
+        contacts, advertising ID, or precise location — and it does not record
+        your gameplay: no move history, no tile choices, no scores. A crash
+        report describes the state of the app, not the person playing it.
+      </p>
+      <p>
+        We use these reports for one purpose only:
+        <strong>to identify, reproduce and fix bugs, crashes and performance
+        problems.</strong> They are never used for advertising, marketing, user
+        profiling or commercial tracking, and we do not build profiles from
+        them. Where data-protection law requires a basis for this processing, we
+        rely on our legitimate interest in keeping the game stable and secure.
+      </p>
+      <p>
+        Crash reports are processed by Google on our behalf through Firebase
+        and Google Cloud infrastructure, retained for up to <strong>90
+        days</strong> while we investigate, and then deleted. We never sell
+        them, and we never share them with anyone for their own purposes.
+      </p>
+      <p>
+        If you think a report accidentally captured something personal, write
+        to us at the address below and we will delete it.
+      </p>
+
       <h2>Third-party services</h2>
       <div class="table-wrap">
         <table>
@@ -574,6 +630,13 @@
                 <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a>
               </td>
             </tr>
+            <tr>
+              <td>Google Firebase Crashlytics</td>
+              <td>Crash diagnostics and stability monitoring</td>
+              <td>
+                <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -591,11 +654,11 @@
       <p>
         For younger players we rely on the &ldquo;support for internal
         operations&rdquo; principle in children&rsquo;s privacy law: contextual
-        ads and aggregate analytics only — the limited data a family-safe ad
-        and a usage count need. There are no behavioural profiles, no
-        persistent advertising identifiers, no personalised ads, no chat, no
-        user-generated content, and no links out of the game other than this
-        policy.
+        ads, aggregate analytics and crash diagnostics only — the limited data
+        a family-safe ad, a usage count and a crash report need. There are no
+        behavioural profiles, no persistent advertising identifiers, no
+        personalised ads, no chat, no user-generated content, and no links out
+        of the game other than this policy.
       </p>
       <p>
         Parents and guardians: if you believe a child&rsquo;s information has
@@ -629,8 +692,9 @@
       <p>
         Google Analytics retains event data for up to 14 months; ad-serving
         logs are kept for the periods described in Google&rsquo;s own privacy
-        policy. Local scores remain until you uninstall the game or clear its
-        storage. We run no server of our own and hold no copy of your data.
+        policy, and crash reports for up to 90 days. Local scores remain until
+        you uninstall the game or clear its storage. We run no server of our
+        own and hold no copy of your data.
       </p>
 
       <h2>Where your data goes</h2>
@@ -652,8 +716,13 @@
         <summary>Version history</summary>
         <ul>
           <li>
+            <strong>1.2 — 5 November 2026.</strong> Firebase Crashlytics crash
+            reports disclosed; no identity, contact or gameplay data.
+          </li>
+          <li>
             <strong>1.1 — 5 November 2026.</strong> Contextual AdMob ads and
-            aggregate Firebase Analytics disclosed.
+            aggregate Firebase Analytics disclosed
+            (<a href="archive/bento-rush-v1.1.html">archived copy</a>).
           </li>
           <li>
             <strong>1.0 — 3 November 2026.</strong> First release: no ads, no

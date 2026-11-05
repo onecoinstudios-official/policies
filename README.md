@@ -38,7 +38,8 @@ Never rename `bento-rush.html` or point Play at a versioned URL.
 
 | Game | Version | Effective | Notes |
 | --- | --- | --- | --- |
-| Bento Rush | 1.1 | 5 Nov 2026 | Contextual AdMob ads + aggregate Firebase Analytics |
+| Bento Rush | 1.2 | 5 Nov 2026 | AdMob + Analytics + Crashlytics crash reports |
+| Bento Rush | 1.1 | 5 Nov 2026 | Archived — ads and analytics, no crash reporting |
 | Bento Rush | 1.0 | 3 Nov 2026 | Archived — no ads, no analytics |
 
 ## Brand assets
