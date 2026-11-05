@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Policies — One Coin Studios</title>
+  <meta name="description" content="Privacy policies for games by One Coin Studios.">
+  <meta name="theme-color" content="#FBF1DF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1E1511" media="(prefers-color-scheme: dark)">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #FBF1DF;
+      --paper-deep: #F2E1C4;
+      --card: #FFF9EE;
+      --ink: #2B211C;
+      --ink-soft: #5C4A3E;
+      --accent: #B23A1B;
+      --accent-soft: #E4572E;
+      --rule: #DCC9A6;
+      --shadow: 0 18px 50px rgba(43, 33, 28, 0.10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #1E1511;
+        --paper-deep: #2B211C;
+        --card: #2B211C;
+        --ink: #FBF1DF;
+        --ink-soft: #D9C9B4;
+        --accent: #FF9A76;
+        --accent-soft: #E4572E;
+        --rule: #4A382B;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.25rem;
+      background:
+        radial-gradient(circle at 12% 0%, var(--paper-deep) 0%, transparent 42rem),
+        var(--paper);
+      color: var(--ink);
+      font-family: ui-rounded, "SF Pro Rounded", "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.65;
+    }
+    main { width: min(100%, 34rem); }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+    .brand svg { width: 1.9rem; height: 1.9rem; flex: none; }
+    h1 {
+      margin: 0 0 1.5rem;
+      font-size: clamp(1.8rem, 7vw, 2.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .card {
+      display: block;
+      padding: 1.35rem 1.5rem;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 1rem;
+      box-shadow: var(--shadow);
+      color: inherit;
+      text-decoration: none;
+      transition: transform 150ms ease, border-color 150ms ease;
+    }
+    .card:hover, .card:focus-visible {
+      transform: translateY(-2px);
+      border-color: var(--accent-soft);
+    }
+    .card .game {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.2rem;
+    }
+    .card .title {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+    .card .meta {
+      display: block;
+      margin-top: 0.35rem;
+      color: var(--ink-soft);
+      font-size: 0.92rem;
+    }
+    footer {
+      margin-top: 2rem;
+      color: var(--ink-soft);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <rect x="4" y="8" width="56" height="48" rx="9" fill="#3B2A21"/>
+        <rect x="9" y="13" width="21" height="17" rx="3" fill="#F2A340"/>
+        <rect x="34" y="13" width="21" height="17" rx="3" fill="#E4572E"/>
+        <rect x="9" y="34" width="21" height="17" rx="3" fill="#4F9D6B"/>
+        <rect x="34" y="34" width="21" height="17" rx="3" fill="#FBF1DF"/>
+      </svg>
+      <span>One Coin Studios</span>
+    </div>
+
+    <h1>Policies</h1>
+
+    <a class="card" href="bento-rush.html">
+      <span class="game">Bento Rush</span>
+      <span class="title">Privacy Policy</span>
+      <span class="meta">Updated 5 November 2026</span>
+    </a>
+
+    <footer>&copy; 2026 One Coin Studios.</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Bento Rush</title>
+  <meta name="description" content="Privacy policy for Bento Rush, the 60-second bento-box match-3 game by One Coin Studios. The game collects nothing and shares nothing.">
+  <meta name="theme-color" content="#FBF1DF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1E1511" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://onecoinstudios.github.io/policies/bento-rush.html">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #FBF1DF;
+      --paper-deep: #F2E1C4;
+      --card: #FFF9EE;
+      --ink: #2B211C;
+      --ink-soft: #5C4A3E;
+      --accent: #B23A1B;
+      --accent-soft: #E4572E;
+      --rule: #DCC9A6;
+      --shadow: 0 18px 50px rgba(43, 33, 28, 0.10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #1E1511;
+        --paper-deep: #2B211C;
+        --card: #2B211C;
+        --ink: #FBF1DF;
+        --ink-soft: #D9C9B4;
+        --accent: #FF9A76;
+        --accent-soft: #E4572E;
+        --rule: #4A382B;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 12% 0%, var(--paper-deep) 0%, transparent 42rem),
+        var(--paper);
+      color: var(--ink);
+      font-family: ui-rounded, "SF Pro Rounded", "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: 1rem;
+      padding: 0.6rem 1rem;
+      background: var(--card);
+      color: var(--ink);
+      border-radius: 0.5rem;
+      z-index: 10;
+    }
+    .skip-link:focus { left: 1rem; }
+
+    .wrap {
+      width: min(100% - 2.5rem, 46rem);
+      margin: 0 auto;
+    }
+
+    header.site {
+      padding: 2.25rem 0 1.25rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+
+    .brand svg {
+      width: 1.9rem;
+      height: 1.9rem;
+      flex: none;
+    }
+
+    .brand .divider {
+      width: 1px;
+      height: 1rem;
+      background: var(--rule);
+    }
+
+    main {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 1.25rem;
+      padding: clamp(1.5rem, 4vw, 3rem);
+      box-shadow: var(--shadow);
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      margin: 0 0 0.4rem;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    h1 .game {
+      display: block;
+      font-size: 0.36em;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.55rem;
+    }
+
+    .updated {
+      margin: 0 0 2rem;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+    }
+
+    .lede {
+      font-size: 1.16rem;
+      line-height: 1.55;
+      margin: 0 0 2rem;
+    }
+
+    .callout {
+      margin: 0 0 2rem;
+      padding: 1rem 1.25rem;
+      border-left: 0.35rem solid var(--accent-soft);
+      background: color-mix(in srgb, var(--accent-soft) 8%, transparent);
+      border-radius: 0 0.6rem 0.6rem 0;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 2.25rem 0 0.6rem;
+      font-size: 1.28rem;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    p { margin: 0 0 1rem; }
+
+    ul {
+      margin: 0 0 1rem;
+      padding-left: 1.3rem;
+    }
+    li { margin: 0.35rem 0; }
+    li::marker { color: var(--accent); }
+
+    strong { font-weight: 800; }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.18em;
+      text-decoration-thickness: 0.08em;
+    }
+    a:hover { color: var(--accent-soft); }
+
+    .contact {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .contact .name { font-weight: 800; }
+
+    .email {
+      display: inline-block;
+      margin-top: 0.35rem;
+      font-size: 1.1rem;
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      padding-bottom: 3rem;
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+    }
+    footer p { margin: 0 0 0.35rem; }
+
+    @media print {
+      :root {
+        --paper: #fff;
+        --card: #fff;
+        --ink: #000;
+        --ink-soft: #333;
+        --accent: #000;
+        --rule: #ccc;
+        --shadow: none;
+      }
+      body { background: #fff; font-size: 11pt; }
+      header.site { padding-top: 0; }
+      main { border: 0; border-radius: 0; padding: 0; box-shadow: none; }
+      a { color: #000; text-decoration: none; }
+      .callout { background: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to the policy</a>
+
+  <div class="wrap">
+    <header class="site">
+      <div class="brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect x="4" y="8" width="56" height="48" rx="9" fill="#3B2A21"/>
+          <rect x="9" y="13" width="21" height="17" rx="3" fill="#F2A340"/>
+          <rect x="34" y="13" width="21" height="17" rx="3" fill="#E4572E"/>
+          <rect x="9" y="34" width="21" height="17" rx="3" fill="#4F9D6B"/>
+          <rect x="34" y="34" width="21" height="17" rx="3" fill="#FBF1DF"/>
+        </svg>
+        <span>One Coin Studios</span>
+        <span class="divider" aria-hidden="true"></span>
+        <span>Bento Rush</span>
+      </div>
+    </header>
+
+    <main id="policy">
+      <h1><span class="game">Bento Rush</span>Privacy Policy</h1>
+      <p class="updated">Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
+
+      <p class="lede">
+        This policy explains what information the <em>Bento Rush</em> mobile game
+        (&ldquo;the Game,&rdquo; developed and published by One Coin Studios,
+        &ldquo;we&rdquo;) handles.
+      </p>
+
+      <p class="callout">The short version: the Game collects nothing and shares nothing.</p>
+
+      <h2>What the Game stores</h2>
+      <p>
+        Your scores and statistics (best score, longest streak, biggest cascade,
+        tiles cleared, per-ingredient totals, accuracy) are stored
+        <strong>on your device only</strong>, using the device&rsquo;s standard
+        local key-value storage. This data:
+      </p>
+      <ul>
+        <li>never leaves your device;</li>
+        <li>is not backed up to our servers (we have none);</li>
+        <li>
+          disappears if you uninstall the Game or clear its storage from your
+          operating system&rsquo;s app settings.
+        </li>
+      </ul>
+
+      <h2>What we collect</h2>
+      <p>
+        <strong>Nothing.</strong> The Game contains no analytics, advertising,
+        tracking SDKs, crash-reporting services, account systems, or network
+        communication. The Game does not require any Android permissions.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        The Game does not knowingly collect any personal information from anyone,
+        of any age &mdash; because it does not collect information at all. There
+        are no chat features, no user-generated content, and no external links
+        inside the Game.
+      </p>
+
+      <h2>Third-party services</h2>
+      <p>
+        None. (Distribution of the Game is via Google Play, whose own policies
+        apply separately to the platform.)
+      </p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>Toggle sound from the in-game speaker button.</li>
+        <li>
+          Delete all locally stored records by uninstalling the Game or clearing
+          its storage in system settings.
+        </li>
+      </ul>
+
+      <h2>Changes</h2>
+      <p>
+        If a future version of the Game ever adds, changes or removes data
+        handling, we will update this page and the &ldquo;Last updated&rdquo;
+        date before that version ships.
+      </p>
+
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Questions about this policy:</p>
+        <p class="name">One Coin Studios</p>
+        <a class="email" href="mailto:oscarl.developer@gmail.com">oscarl.developer@gmail.com</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 One Coin Studios. All rights reserved.</p>
+      <p><a href="./">All policies</a></p>
+    </footer>
+  </div>
+</body>
+</html>
