@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — Bento Rush</title>
-  <meta name="description" content="Privacy policy for Bento Rush, the 60-second bento-box match-3 game by One Coin Studios. The game collects nothing and shares nothing.">
+  <meta name="description" content="Privacy policy for Bento Rush, the 60-second bento-box match-3 game by One Coin Studios: local scores, contextual family-safe ads from Google AdMob, and anonymous usage counts.">
   <link rel="canonical" href="https://onecoinstudios-official.github.io/policies/bento-rush.html">
 
   <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="One Coin Studios">
   <meta property="og:title" content="Privacy Policy — Bento Rush">
-  <meta property="og:description" content="Bento Rush collects nothing and shares nothing. Read the full privacy policy.">
+  <meta property="og:description" content="Local scores, contextual family-safe ads, anonymous usage counts. No account, no profile, no advertising ID.">
   <meta property="og:url" content="https://onecoinstudios-official.github.io/policies/bento-rush.html">
   <meta property="og:image" content="https://onecoinstudios-official.github.io/policies/assets/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -248,6 +248,81 @@
 
     strong { font-weight: 800; }
 
+    .table-wrap {
+      margin: 0 0 1.25rem;
+      border: 1px solid var(--rule);
+      border-radius: 0.85rem;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    table {
+      width: 100%;
+      min-width: 30rem;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 0.65rem 0.85rem 0.15rem;
+      text-align: left;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      caption-side: top;
+    }
+
+    th, td {
+      padding: 0.7rem 0.85rem;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+    }
+
+    th {
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      background: color-mix(in srgb, var(--gold) 10%, transparent);
+      white-space: nowrap;
+    }
+
+    tbody tr:last-child td { border-bottom: 0; }
+
+    td + td, th + th {
+      border-left: 1px solid color-mix(in srgb, var(--rule) 55%, transparent);
+    }
+
+    .changelog {
+      margin: 0 0 1rem;
+      padding: 0.85rem 1.1rem;
+      border: 1px solid var(--rule);
+      border-radius: 0.85rem;
+      background: color-mix(in srgb, var(--paper-soft) 55%, transparent);
+    }
+    .changelog summary {
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: var(--ink-soft);
+    }
+    .changelog summary:focus-visible {
+      outline: 3px solid var(--sky);
+      outline-offset: 3px;
+      border-radius: 0.2rem;
+    }
+    .changelog ul {
+      margin: 0.75rem 0 0;
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+    }
+    .changelog strong { color: var(--ink); }
+
     .contact {
       margin-top: 2.5rem;
       padding-top: 1.5rem;
@@ -313,10 +388,13 @@
         font-size: 11pt;
       }
       header.site { padding-top: 0; }
-      main { border: 0; border-radius: 0; padding: 0; box-shadow: none; }
+      main { border: 0; border-radius: 0; padding: 0; box-shadow: none; overflow: visible; }
       main::before, .footer-banner, .header-link, .skip-link { display: none; }
       a { color: #000; text-decoration: none; }
       .callout { background: none; }
+      .table-wrap { overflow: visible; }
+      table { min-width: 0; }
+      .changelog[open] summary { list-style: none; }
     }
   </style>
 </head>
@@ -339,20 +417,25 @@
     <main id="policy">
       <p class="eyebrow">One Coin Studios</p>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: <time datetime="2026-11-05">5 November 2026</time></p>
-
-      <p class="lede">
-        This policy explains what information the <em>Bento Rush</em> mobile game
-        (&ldquo;the Game,&rdquo; developed and published by One Coin Studios,
-        &ldquo;we&rdquo;) handles.
+      <p class="updated">
+        Effective <time datetime="2026-11-05">5 November 2026</time> · Version 1.1
       </p>
 
-      <p class="callout">The short version: the Game collects nothing and shares nothing.</p>
+      <p class="lede">
+        Bento Rush is a 60-second match-3 game. This policy explains what the
+        game, and the two Google services it uses, do with information — in
+        plain terms and without small print.
+      </p>
 
-      <h2>What the Game stores</h2>
+      <p class="callout">
+        No account, no sign-in, no profile. Your scores stay on your device.
+        Ads are contextual and family-safe — never based on who you are.
+      </p>
+
+      <h2>What stays on your device</h2>
       <p>
-        Your scores and statistics (best score, longest streak, biggest cascade,
-        tiles cleared, per-ingredient totals, accuracy) are stored
+        Your scores and statistics (best score, longest streak, biggest
+        cascade, tiles cleared, per-ingredient totals, accuracy) are stored
         <strong>on your device only</strong>, using the device&rsquo;s standard
         local key-value storage. This data:
       </p>
@@ -367,44 +450,222 @@
 
       <h2>What we collect</h2>
       <p>
-        <strong>Nothing.</strong> The Game contains no analytics, advertising,
-        tracking SDKs, crash-reporting services, account systems, or network
-        communication. The Game does not require any Android permissions.
+        Bento Rush itself keeps your scores locally. Two Google services
+        receive the following, and nothing else:
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Data received by Google</caption>
+          <thead>
+            <tr>
+              <th scope="col">Data</th>
+              <th scope="col">Why</th>
+              <th scope="col">Received by</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Approximate location — country or region, inferred by Google
+                from your IP address
+              </td>
+              <td>Choosing an ad and reporting traffic by country</td>
+              <td>Google</td>
+            </tr>
+            <tr>
+              <td>
+                App interactions — a round started, a round finished, the
+                records screen opened
+              </td>
+              <td>Understanding which parts of the game get played</td>
+              <td>Google</td>
+            </tr>
+            <tr>
+              <td>
+                Device and app details — device model, OS version, app
+                version, language, coarse screen size
+              </td>
+              <td>Delivering an ad that fits and diagnosing problems</td>
+              <td>Google</td>
+            </tr>
+            <tr>
+              <td>
+                A random app instance identifier, created on install and
+                replaced when you reinstall
+              </td>
+              <td>Grouping events from one install without identifying you</td>
+              <td>Google</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        <strong>What we never collect:</strong> your name, email address,
+        phone number, contacts, photos, precise location, advertising ID, or
+        any account identifier. There is no sign-in, no profile, and no
+        tracking across other apps or websites.
+      </p>
+
+      <h2>Advertising</h2>
+      <p>
+        Bento Rush shows a full-screen ad between rounds — at most one every
+        few rounds, and only when you tap to start the next round. Ads come
+        from <strong>Google AdMob</strong>.
+      </p>
+      <p>They are <strong>contextual</strong>: chosen from what the app is, not from a profile of you. Specifically:</p>
+      <ul>
+        <li>
+          every ad request is tagged for child age treatment, which disables
+          personalised and interest-based advertising;
+        </li>
+        <li>ad content is capped at the &ldquo;G&rdquo; rating, suitable for all audiences;</li>
+        <li>
+          the advertising-ID permission is removed from the app, so no
+          advertising identifier exists for Google or for us to use;
+        </li>
+        <li>no remarketing, no audience lists, no cross-app tracking.</li>
+      </ul>
+      <p>
+        Google may record that an ad was requested, shown or tapped, and may
+        use the approximate location above to pick a suitable ad and to report
+        aggregate statistics to us.
+      </p>
+
+      <h2>Analytics</h2>
+      <p>
+        We use <strong>Google Analytics for Firebase</strong> to answer
+        questions like &ldquo;do people finish their first round?&rdquo; — with
+        counts and buckets, not profiles. Four event types are sent: a round
+        started, a round ended (score and move buckets plus cascade and streak
+        counts), the records screen opened, and whether ads were allowed on
+        that launch.
+      </p>
+      <p>
+        We never set a user ID, never attach your local scores, and never
+        enable ad-personalisation signals. Collection stays off until the
+        consent step below is resolved.
+      </p>
+
+      <h2>Third-party services</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Who else is involved</caption>
+          <thead>
+            <tr>
+              <th scope="col">Service</th>
+              <th scope="col">Purpose</th>
+              <th scope="col">Their policy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google AdMob</td>
+              <td>Serving contextual, family-safe ads</td>
+              <td>
+                <a href="https://policies.google.com/technologies/ads" rel="noopener">policies.google.com/technologies/ads</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Google Analytics for Firebase</td>
+              <td>Aggregate usage counts</td>
+              <td>
+                <a href="https://firebase.google.com/support/privacy" rel="noopener">firebase.google.com/support/privacy</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Nothing else receives data from the game. Distribution happens through
+        Google Play, whose own policies apply to the store itself.
       </p>
 
       <h2>Children</h2>
       <p>
-        The Game does not knowingly collect any personal information from anyone,
-        of any age &mdash; because it does not collect information at all. There
-        are no chat features, no user-generated content, and no external links
-        inside the Game.
+        Bento Rush is made for a general audience and is suitable for children.
+        We do not knowingly collect personal information from anyone, of any
+        age.
       </p>
-
-      <h2>Third-party services</h2>
       <p>
-        None. (Distribution of the Game is via Google Play, whose own policies
-        apply separately to the platform.)
+        For younger players we rely on the &ldquo;support for internal
+        operations&rdquo; principle in children&rsquo;s privacy law: contextual
+        ads and aggregate analytics only — the limited data a family-safe ad
+        and a usage count need. There are no behavioural profiles, no
+        persistent advertising identifiers, no personalised ads, no chat, no
+        user-generated content, and no links out of the game other than this
+        policy.
+      </p>
+      <p>
+        Parents and guardians: if you believe a child&rsquo;s information has
+        reached us, write to the address below and we will delete it.
       </p>
 
       <h2>Your choices</h2>
       <ul>
-        <li>Toggle sound from the in-game speaker button.</li>
         <li>
-          Delete all locally stored records by uninstalling the Game or clearing
-          its storage in system settings.
+          <strong>Consent.</strong> Where the law requires it — for example in
+          the EEA and the UK — a Google-certified consent form appears before
+          any ad loads. You can change that choice at any time from
+          <em>Lunch Records → Privacy options</em> inside the game.
         </li>
+        <li>
+          <strong>Reset the identifier.</strong> Reinstalling the game creates
+          a new random app instance identifier.
+        </li>
+        <li>
+          <strong>Delete local records.</strong> Uninstall the game or clear
+          its storage in your device settings.
+        </li>
+        <li><strong>Sound.</strong> Toggle audio from the speaker button on the game screen.</li>
       </ul>
+      <p>
+        There is no ad-free purchase. If that ever changes, this page will say
+        so before the version ships.
+      </p>
+
+      <h2>How long it is kept</h2>
+      <p>
+        Google Analytics retains event data for up to 14 months; ad-serving
+        logs are kept for the periods described in Google&rsquo;s own privacy
+        policy. Local scores remain until you uninstall the game or clear its
+        storage. We run no server of our own and hold no copy of your data.
+      </p>
+
+      <h2>Where your data goes</h2>
+      <p>
+        Google processes this data on servers outside your country, including
+        in the United States, under the transfer safeguards described in
+        Google&rsquo;s privacy policy. All traffic is encrypted in transit
+        using HTTPS.
+      </p>
 
       <h2>Changes</h2>
       <p>
-        If a future version of the Game ever adds, changes or removes data
-        handling, we will update this page and the &ldquo;Last updated&rdquo;
-        date before that version ships.
+        If a future version changes what is collected, this page and its
+        effective date are updated before that version ships. Earlier versions
+        stay in the archive so you can always see what applied when.
       </p>
+
+      <details class="changelog">
+        <summary>Version history</summary>
+        <ul>
+          <li>
+            <strong>1.1 — 5 November 2026.</strong> Contextual AdMob ads and
+            aggregate Firebase Analytics disclosed.
+          </li>
+          <li>
+            <strong>1.0 — 3 November 2026.</strong> First release: no ads, no
+            analytics, nothing collected
+            (<a href="archive/bento-rush-v1.html">archived copy</a>).
+          </li>
+        </ul>
+      </details>
 
       <div class="contact">
         <h2>Contact</h2>
-        <p>Questions about this policy:</p>
+        <p>Questions about this policy, or a deletion request:</p>
         <p class="name">One Coin Studios</p>
         <a class="email" href="mailto:oscarl.developer@gmail.com">oscarl.developer@gmail.com</a>
       </div>
