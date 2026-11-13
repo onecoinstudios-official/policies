@@ -6,45 +6,45 @@ One Coin Studios brand.
 | Page | URL |
 | --- | --- |
 | Index | `https://onecoinstudios-official.github.io/policies/` |
-| Bento Rush privacy policy | `https://onecoinstudios-official.github.io/policies/bento-rush.html` |
+| Bento Blitz privacy policy | `https://onecoinstudios-official.github.io/policies/bento-blitz.html` |
 
 ## Layout
 
 | Path | Purpose |
 | --- | --- |
 | `index.html` | Policy index, links to each game's policy |
-| `bento-rush.html` | Bento Rush privacy policy (the URL Play Console uses) |
+| `bento-blitz.html` | Bento Blitz privacy policy (the URL Play Console uses) |
 | `archive/` | Superseded versions, kept citable and marked `noindex` |
 | `assets/` | Generated brand images served by the site |
 | `.nojekyll` | Stops GitHub Pages from running Jekyll over the files |
 
 ## Policy versioning
 
-`bento-rush.html` is a **permanent URL** — Play Console points at it, and it
+`bento-blitz.html` is a **permanent URL** — Play Console points at it, and it
 always shows the current policy for the game. Material changes are handled
 like this:
 
-1. Copy the outgoing page to `archive/bento-rush- vX.html` before editing.
+1. Copy the outgoing page to `archive/bento-blitz- vX.html` before editing.
 2. Add `noindex` and the "Archived" banner so search engines don't index it.
-3. Bump the effective date and version on `bento-rush.html`, and add a line
+3. Bump the effective date and version on `bento-blitz.html`, and add a line
    to its **Version history** block.
 4. Mirror the same change in
    `../games/bento_rush/store/privacy_policy.md` and in the Play forms
    (`store/play_console_worksheets.md`) **before** the build ships.
 
-Never rename `bento-rush.html` or point Play at a versioned URL.
+Never rename `bento-blitz.html` or point Play at a versioned URL.
 
 ### Current policies
 
 | Game | Version | Effective | Notes |
 | --- | --- | --- | --- |
-| Bento Rush | 1.2 | 5 Nov 2026 | AdMob + Analytics + Crashlytics crash reports |
-| Bento Rush | 1.1 | 5 Nov 2026 | Archived — ads and analytics, no crash reporting |
-| Bento Rush | 1.0 | 3 Nov 2026 | Archived — no ads, no analytics |
+| Bento Blitz | 1.2 | 5 Nov 2026 | AdMob + Analytics + Crashlytics crash reports |
+| Bento Blitz | 1.1 | 5 Nov 2026 | Archived — ads and analytics, no crash reporting |
+| Bento Blitz | 1.0 | 3 Nov 2026 | Archived — no ads, no analytics |
 
 ## Brand assets
 
-`assets/` is generated from `/Users/oscar/Desktop/One-Coin-Studios/studio_branding`
+`assets/` is generated from `/Volumes/SD_2tb/One-Coin-Studios/studio_branding`
 (`one-coin-logo.png`, `one-coin-banner.png`). Nothing is drawn by hand, so
 keep the source art as the single source of truth and regenerate if it
 changes.
@@ -84,7 +84,7 @@ print styles that strip the banner and chrome.
    - Source: **Deploy from a branch**
    - Branch: **main**, folder: **/ (root)**
 3. Wait for the Pages deployment, then open
-   `https://onecoinstudios-official.github.io/policies/bento-rush.html`.
+   `https://onecoinstudios-official.github.io/policies/bento-blitz.html`.
 4. Paste that URL into Play Console → **App content → Privacy policy**.
 
 If the repository ever moves to a different account or organisation, the
@@ -97,7 +97,7 @@ custom Pages domain; the site already serves over HTTPS either way.
 
 ## Editing the policy
 
-Edit `bento-rush.html` **and** the source of truth at
+Edit `bento-blitz.html` **and** the source of truth at
 `../games/bento_rush/store/privacy_policy.md`, then update the
 "Last updated" date in both places and the date shown on `index.html`.
 If the change is material (anything that affects the Data Safety form),
